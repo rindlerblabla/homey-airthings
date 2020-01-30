@@ -120,7 +120,8 @@
 		{
 	"name": "ChangedVoc",
 	"type": "device",
-	"filter": "driver_id=airthings-wave-plus, airthings-wave-mini"
+	"filter": [ "driver_id=airthings-wave-plus", 
+		   "driver_id=airthings-wave-mini" ]
 	 	}
 		]
 		},
