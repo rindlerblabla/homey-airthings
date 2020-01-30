@@ -146,7 +146,7 @@
 		 {
 		"name": "ChangedRadon",
 		"type": "device",
-		"filter": "driver_id=airthings-wave, airthings-wave-plus"
+		"filter": ["driver_id=airthings-wave", "driver_id=airthings-wave-plus"]
 		 }
 		]
 		},
