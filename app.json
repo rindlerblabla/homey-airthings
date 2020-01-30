@@ -98,56 +98,57 @@
     ]
   },
   "flow": {
-		"triggers": [
+	"triggers": [
       {
       "id": "measure_voc_changed",
-				"title": {
-				  "en": "VOC changed"
-				},
-				"tokens": [
-				  {
-					"name": "measure_voc",
-					"type": "number",
-					"title": {
-					  "en": "value"
-					},
-					"example": {
-					  "en": "50"
-					}
-				  }
-				],
-				"args": [
-				  {
-					"name": "ChangedVoc",
-					"type": "device",
-					"filter": "driver_id=airthings-wave-plus, airthings-wave-mini"
-				  }
-				]
-			},
+	"title": {
+	"en": "VOC changed"
+		},
+	"tokens": [
+		{
+	"name": "measure_voc",
+	"type": "number",
+	"title": {
+	 "en": "value"
+		},
+	"example": {
+	 "en": "50"
+		}
+	}
+	],
+	"args": [
+		{
+	"name": "ChangedVoc",
+	"type": "device",
+	"filter": "driver_id=airthings-wave-plus, airthings-wave-mini"
+	 	}
+		]
+		},
+		{
         "id": "measure_radon_changed",
-				"title": {
-				  "en": "Radon changed"
-				},
-				"tokens": [
-				  {
-					"name": "measure_radon",
-					"type": "number",
-					"title": {
-					  "en": "value"
-					},
-					"example": {
-					  "en": "200"
-					}
-				  }
-				],
-				"args": [
-				  {
-					"name": "ChangedRadon",
-					"type": "device",
-					"filter": "driver_id=airthings-wave, airthings-wave-plus"
-				  }
-				]
-			},
+		"title": {
+		"en": "Radon changed"
+		},
+		"tokens": [
+		{
+		"name": "measure_radon",
+		"type": "number",
+		"title": {
+		"en": "value"
+		},
+		"example": {
+		 "en": "200"
+		}
+		}
+		],
+		"args": [
+		 {
+		"name": "ChangedRadon",
+		"type": "device",
+		"filter": "driver_id=airthings-wave, airthings-wave-plus"
+		 }
+		]
+		},
           ]
   },
   "drivers": [
