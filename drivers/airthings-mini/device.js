@@ -16,7 +16,11 @@ class WaveMiniDevice extends Homey.Device {
         this.poll();
 
 		setInterval(this.poll.bind(this), POLL_INTERVAL);
-
+		
+		// register Flow triggers
+		this._flowTriggermeasure_voc_changed = new Homey.FlowCardTriggerDevice('measure_radon_changed').register();
+		
+		
 	}
 
 	poll() {
